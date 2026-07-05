@@ -1,0 +1,21 @@
+{
+    "Age": 36.923809523809524,
+    "BusinessTravel": "Travel_Rarely",
+    "DailyRate": 802.4857142857143,
+    "Department": "Research & Development",
+    "DistanceFromHome": 9.19251700680272,
+    "EducationField": "Life Sciences",
+    "EnvironmentSatisfaction": 2.721768707482993,
+    "JobInvolvement": 2.7299319727891156,
+    "JobRole": "Sales Executive",
+    "JobSatisfaction": 2.7285714285714286,
+    "MaritalStatus": "Married",
+    "MonthlyIncome": 6502.931292517007,
+    "NumCompaniesWorked": 2.6931972789115646,
+    "OverTime": "No",
+    "StockOptionLevel": 0.7938775510204081,
+    "TrainingTimesLastYear": 2.7993197278911564,
+    "WorkLifeBalance": 2.7612244897959184,
+    "YearsWithCurrManager": 4.12312925170068,
+    "Job_Hopping_Index": 0.33306121719082055
+}
