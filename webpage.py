@@ -22,11 +22,20 @@ except ImportError as e:
 @st.cache_resource
 def load_assets():
     try:
-        model = joblib.load('logistic_model.pkl')
-        scaler = joblib.load('scaler.pkl')
-        model_columns = joblib.load('model_columns.pkl')
+        # Get the directory where this script is located
+        script_dir = os.path.dirname(os.path.abspath(__file__))
         
-        with open('baseline_employee.json', 'r') as file:
+        # Build absolute paths for all files
+        model_path = os.path.join(script_dir, 'logistic_model.pkl')
+        scaler_path = os.path.join(script_dir, 'scaler.pkl')
+        columns_path = os.path.join(script_dir, 'model_columns.pkl')
+        baseline_path = os.path.join(script_dir, 'baseline_employee.json')
+        
+        model = joblib.load(model_path)
+        scaler = joblib.load(scaler_path)
+        model_columns = joblib.load(columns_path)
+        
+        with open(baseline_path, 'r') as file:
             baseline_profile = json.load(file)
             
         return model, scaler, model_columns, baseline_profile
